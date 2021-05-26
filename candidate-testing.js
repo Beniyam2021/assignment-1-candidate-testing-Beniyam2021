@@ -1,16 +1,29 @@
 const input = require('readline-sync');
-
+console.log("Wel Come to Candidate Testing,");
 // TODO 2: modify your quiz app to ask 5 questions //
 
 // TODO 1.1a: Define candidateName // 
 let candidateName;
+candidateName = "Hana";
+console.log("Candidate Name:",candidateName);
+
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question;
-let correctAnswer;
+question = "1) Who was the first American woman in space?";
+console.log(question);
 let candidateAnswer;
-let questions;
-let correctAnswers;
+candidateAnswer = "Your Answer: sally ride";
+console.log("Your Answer: sally ride");
+let correctAnswer;
+correctAnswer = "Sally Ride";
+console.log("Correct Answer: Sally Ride");
+console.log("");
+console.log("2) True or false: 5000 meters = 5 kilometers.");
 let candidateAnswers;
+let correctAnswers;
+
+
+
 
 
 function askForName() {
