@@ -1,18 +1,19 @@
 const input = require('readline-sync');
-console.log("Wel Come to Candidate Testing,");
-// TODO 2: modify your quiz app to ask 5 questions //
 
+let name = input.question("Enter your name: ");
+console.log("Wel Come to Candidate Testing,"+ name + "!");
+// TODO 2: modify your quiz app to ask 5 questions //
+console.log();
 // TODO 1.1a: Define candidateName // 
-let candidateName;
-candidateName = "Hana";
+const candidateName = ("Can Twin");
 console.log("Candidate Name:",candidateName);
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question;
-question = "1) Who was the first American woman in space?";
-console.log(question);
+question = input.question("1) Who was the first American woman in space?");
+console.log(question);/*
 let candidateAnswer;
-candidateAnswer = "Your Answer: sally ride";
+candidateAnswer = ""; //   sally ride
 console.log("Your Answer: sally ride");
 let correctAnswer;
 correctAnswer = "Sally Ride";
@@ -68,4 +69,4 @@ module.exports = {
   candidateAnswers: candidateAnswers,
   gradeQuiz: gradeQuiz,
   runProgram: runProgram
-};
+};*/
