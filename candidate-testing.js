@@ -12,7 +12,7 @@ console.log("Candidate Name:",candidateName);
 let question;
 question = input.question("1) Who was the first American woman in space?");     // "Sally ride" //
 let candidateAnswer;
-if (candidateAnswer === "Sally Ride"){
+if (candidateAnswer == "Sally Ride"){
   console.log("Correct");
 }else{
   console.log("Wrong");
@@ -22,7 +22,7 @@ console.log();
 let question2;
 question2 = input.question("2) True or false: 5000 meters = 5 kilometers.");
 let candidateAnswer2;
-if (candidateAnswer2 === "true"){
+if (candidateAnswer2 == "true"){
   console.log("Correct")
 }else{
   console.log("Wrong")
@@ -37,8 +37,26 @@ if (candidateAnswer3 === 40){
 }else{
   console.log("Wrong")
 }
+console.log();
+/*
+let question4;
+question4 = input.question("(4) "Given the array" [8, "Orbit", "Trajectory", 45], "what entry is at index 2?")")
+let candidateAnswer4;//trajectory
+if (candidateAnswer4 == "Trajectory"){
+  console.log("correct")
+}else{
+  console.log("wrong")
+}
+console.log();
 
-
+let question5;
+question5 = input.question5("5) What is the minimum crew size for the ISS?");
+let candidateAnswer5;//10
+if (candidateAnswer5 === 3){
+  console.log("correct")
+}else{
+  console.log("wrong")
+}
 
 
 
@@ -85,4 +103,4 @@ function runProgram() {
   //candidateAnswers: candidateAnswers,
   //gradeQuiz: gradeQuiz,
  // runProgram: runProgram
-//};
+//};*/
