@@ -10,18 +10,34 @@ console.log("Candidate Name:",candidateName);
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question;
-question = input.question("1) Who was the first American woman in space?");
-console.log(question);/*
+question = input.question("1) Who was the first American woman in space?");     // "Sally ride" //
 let candidateAnswer;
-candidateAnswer = ""; //   sally ride
-console.log("Your Answer: sally ride");
-let correctAnswer;
-correctAnswer = "Sally Ride";
-console.log("Correct Answer: Sally Ride");
-console.log("");
-console.log("2) True or false: 5000 meters = 5 kilometers.");
-let candidateAnswers;
-let correctAnswers;
+if (candidateAnswer === "Sally Ride"){
+  console.log("Correct");
+}else{
+  console.log("Wrong");
+}
+console.log();
+
+let question2;
+question2 = input.question("2) True or false: 5000 meters = 5 kilometers.");
+let candidateAnswer2;
+if (candidateAnswer2 === "true"){
+  console.log("Correct")
+}else{
+  console.log("Wrong")
+}
+console.log();
+
+let question3;
+question3 = input.question("3) (5 + 3)/2 * 10 = ?");
+let candidateAnswer3;
+if (candidateAnswer3 === 40){
+  console.log("Correct")
+}else{
+  console.log("Wrong")
+}
+
 
 
 
@@ -59,14 +75,14 @@ function runProgram() {
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
-module.exports = {
-  candidateName: candidateName,
-  question: question,
-  correctAnswer: correctAnswer,
-  candidateAnswer: candidateAnswer,
-  questions: questions,
-  correctAnswers: correctAnswers,
-  candidateAnswers: candidateAnswers,
-  gradeQuiz: gradeQuiz,
-  runProgram: runProgram
-};*/
+//module.exports = {
+ // candidateName: candidateName,
+ // question: question,
+ // correctAnswer: correctAnswer,
+ // candidateAnswer: candidateAnswer,
+ // questions: questions,
+ // correctAnswers: correctAnswers,
+  //candidateAnswers: candidateAnswers,
+  //gradeQuiz: gradeQuiz,
+ // runProgram: runProgram
+//};
