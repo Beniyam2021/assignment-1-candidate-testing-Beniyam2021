@@ -1,15 +1,23 @@
+// TODO 1.1a: Define candidateName // 
+
 const input = require('readline-sync');
+
+// TODO 1.1b: Ask for candidate's name //("Can Twin");
 
 let candidateName = input.question("enter your name?");
 candidateName;
 console.log("Wel Come,"+ candidateName + "!");
-// TODO 2: modify your quiz app to ask 5 questions //
 console.log();
-// TODO 1.1a: Define candidateName // 
-//const candidateName = ("Can Twin");
+
+// TODO 1.1c: Ask for candidate's name //
+
 console.log("Candidate Name:",candidateName);
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
+// TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
+// TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
+// TODO 2: modify your quiz app to ask 5 questions //
+
 let question;
 question = input.question("1) Who was the first American woman in space?");  
 let candidateAnswer;//sally ride
@@ -60,22 +68,20 @@ if (candidateAnswer5 === 3){
 }
 /*
 function askForName() {
-  // TODO 1.1b: Ask for candidate's name //
+// TODO 1.1b: Ask for candidate's name //
 
 }
 
 function askQuestion() {
-  // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 
 
 }
 
 function gradeQuiz(candidateAnswers) {
 
-  // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
 
-  let grade;
+ let grade;
   
 
   return grade;
@@ -83,7 +89,7 @@ function gradeQuiz(candidateAnswers) {
 
 function runProgram() {
   askForName();
-  // TODO 1.1c: Ask for candidate's name //
+// TODO 1.1c: Ask for candidate's name //
   
   askQuestion();
   gradeQuiz(this.candidateAnswers);
