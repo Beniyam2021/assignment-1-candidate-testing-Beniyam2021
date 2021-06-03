@@ -1,17 +1,17 @@
 // TODO 1.1a: Define candidateName // 
 
 const input = require('readline-sync');
-
+let candidateName;
 // TODO 1.1b: Ask for candidate's name //("Can Twin");
 
-let candidateName = input.question("enter your name?");
+candidateName = input.question("enter your name?");
 candidateName;
 console.log("Wel Come,"+ candidateName + "!");
 console.log();
 
 // TODO 1.1c: Ask for candidate's name //
 
-console.log("Candidate Name:",candidateName);
+console.log(`Candidate Name: ${candidateName}`);
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
@@ -19,7 +19,7 @@ console.log("Candidate Name:",candidateName);
 // TODO 2: modify your quiz app to ask 5 questions //
 
 let question;
-question = input.question("1) Who was the first American woman in space?");  
+question = input.question(`1) Who was the first American woman in space?`);  
 let candidateAnswer;//sally ride
 if (candidateAnswer = "Sally Ride"){
   console.log("Correct");
@@ -29,7 +29,7 @@ if (candidateAnswer = "Sally Ride"){
 console.log();
 
 let question2;
-question2 = input.question("2) True or false: 5000 meters = 5 kilometers.");
+question2 = input.question(`2) True or false: 5000 meters = 5 kilometers.`);
 let candidateAnswer2;//false
 if (candidateAnswer2 == "true"){
   console.log("Correct")
@@ -39,7 +39,7 @@ if (candidateAnswer2 == "true"){
 console.log();
 
 let question3;
-question3 = input.question("3) (5 + 3)/2 * 10 = ?");
+question3 = input.question(`3) (5 + 3)/2 * 10 = ?`);
 let candidateAnswer3;//45
 if (candidateAnswer3 === 40){
   console.log("Correct")
@@ -67,17 +67,8 @@ if (candidateAnswer5 === 3){
   console.log("wrong")
 }
 /*
-function askForName() {
-// TODO 1.1b: Ask for candidate's name //
+function gradeQuiz(candidateAnswers) 
 
-}
-
-function askQuestion() {
-
-
-}
-
-function gradeQuiz(candidateAnswers) {
 
 
 
@@ -86,10 +77,6 @@ function gradeQuiz(candidateAnswers) {
 
   return grade;
 }
-
-function runProgram() {
-  askForName();
-// TODO 1.1c: Ask for candidate's name //
   
   askQuestion();
   gradeQuiz(this.candidateAnswers);
